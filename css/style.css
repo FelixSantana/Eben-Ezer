@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+html{
+    font-family: 'Roboto', 'sans-serif';
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.navbar button{
+    background-color: transparent;
+}
+
+.main{
+    height: 600px;
+    background-image:url(../img/wave4.svg);
+    background-size: cover;
+}
+button{
+    background-color: #0099FF;
+}
+.buy:hover{
+    background-color: white !important;
+}
+.buy a:hover{
+    color: black !important;
+
+}
+.main .container .row img{
+    height: 500px;
+}
+
+.about{
+    height: auto;
+
+}
+.about .col-lg-6 h1{
+    font-size: 2em;
+}
+.about p{
+    font-size: 1.5em;
+}
+
+.divider{
+    background-color: #0099FF;
+    width: 190px;
+    height: 3px;
+}
+.products{
+    height: auto;
+}
+.products img{
+    max-width: 250px;
+    max-height: 350px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-price .last-price{
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+.content-price .new-price{
+    background-color: #0099FF;
+    color: #fff;
+    text-decoration: line-through;
+}
+.support{
+    background-color: #273036;
+}
+
+.contact .info-box {
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    background:#273036;
+  }
+  .contact .info-box i.fas, i.far {
+    font-size: 30px;
+    color: #0099FF;
+    border-radius: 50%;
+    padding: 10px;
+    float: left;
+    background: rgba(255, 255, 255, 0.1);
+}
+.contact .info-box h3 {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.753);
+    font-weight: 700;
+    margin: 10px 0 8px 68px;
+  }
+  
+  .contact .info-box p {
+    padding: 0;
+    color: #fff;
+    line-height: 24px;
+    font-size: 14px;
+    margin: 0 0 0 68px;
+  }
+  
+  .contact .info-box .social-links {
+    margin: 5px 0 0 68px;
+    display: flex;
+  }
+  
+  .contact .info-box .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    color: #fff;
+    line-height: 1;
+    margin-right: 12px;
+    transition: 0.3s;
+  }
+  .contact .info-box .social-links a:hover {
+    color: #0099FF;
+  }
+  
+footer{
+    background-color: #273036;
+    height: auto;
+}
+footer .links a:hover{
+    background-color: #0099FF;
+}
+footer .far{
+    background:  none;
+}
+
+@media all and (min-width: 992px) {
+    .navbar a:hover{
+            background-color: black !important;
+            color: white  !important;
+    }
+}
+
+@media (max-width: 990px) {
+    .main{
+        height: 500px;
+    }
+    .main .row{
+        display: flex;
+
+    }
+    .main .row .col-lg-4{
+        margin-bottom: 30px;
+    }
+    .main .row .col-lg-4 img{
+        max-width: 350px;
+        max-height: 350px;
+    }
+    .main .row .col-lg-6 h1{
+        font-size: 2.5em;
+    }
+    .main .row .col-lg-6 h2{
+        font-size: 1.5em;
+    }
+    .main .row .col-lg-6 h4{
+        font-size: 1.2em;
+    }
+
+    footer .links ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width:767px) {
+    .main{
+        height: auto;
+    }
+    .main .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .main .row .col-lg-4{
+        display: flex;
+        justify-content: center;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-bottom: 30px;
+    }
+    .main .row .col-lg-4 img{
+        max-width: 250px !important;
+        max-height: 250px !important;
+    }
+    .main .row .col-lg-6{
+        display: block;
+    }
+    .main .row .col-lg-6 h1{
+      font-size: 2em;
+    }
+    .main .row .col-lg-6 h2{
+        font-size: 1.3em;
+    }
+
+}
+
+@media (max-width:575px) {
+    .main button{
+        margin-bottom: 60px !important;
+    }
+    .main{
+        height: 650px;
+    }
+}
+
+@media (max-width:687px) {
+    .support{
+        flex-direction: column;
+    }
+    .support h1{
+        font-size: 2.5em;
+    }
+    
+}
