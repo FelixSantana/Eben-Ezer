@@ -188,13 +188,23 @@ footer .far{
         max-height: 250px !important;
     }
     .main .row .col-lg-6{
-        display: block;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
     .main .row .col-lg-6 h1{
       font-size: 2em;
+      margin-left: auto !important;
+      margin-right: auto !important;
     }
     .main .row .col-lg-6 h2{
         font-size: 1.3em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .main .row .buy{
+        margin: auto;
     }
 
 }
